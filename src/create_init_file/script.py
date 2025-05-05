@@ -14,7 +14,7 @@ def create_init_files(root_dir, exclude_dirs=None):
         exclude_dirs = ["__pycache__"]
 
     # Normalize exclude_dirs for case-insensitive comparison
-    exclude_dirs = {d.lower() for d in exclude_dirs}
+    exclude_dirs = {d.lower() for d in exclude_dirs}.union({"__pycache__"})
 
     for dirpath, _, _ in os.walk(root_dir):
         current_dir = os.path.basename(dirpath).lower()

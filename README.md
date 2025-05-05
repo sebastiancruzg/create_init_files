@@ -1,4 +1,3 @@
-
 # Project Name
 
 A brief description of your project.
@@ -17,7 +16,7 @@ A brief description of your project.
 Run the script with the following command:
 
 ```bash
-python run.py <target_directory> [--exclude <dir1> <dir2> ...]
+python -m run <target_directory> [--exclude <dir1> <dir2> ...]
 ```
 
 Example
