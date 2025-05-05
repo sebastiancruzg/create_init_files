@@ -19,11 +19,21 @@ Run the script with the following command:
 python -m run <target_directory> [--exclude <dir1> <dir2> ...]
 ```
 
-Example
+### Example
+
+Project Structure:
+.
+├── ttn-medical-core/
+└── create_init_files/
+
+To run:
 
 ```bash
-1 python run.py ttn-medical-core --exclude templates
+cd create_init_file
+python -m run ../ttn-medical-core --exclude templates
 ```
+
+
 
 ---
 
