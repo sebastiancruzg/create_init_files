@@ -3,7 +3,7 @@ import argparse
 
 def create_init_files(root_dir, exclude_dirs=None):
     """
-    Recursively create __init__.py files in all subdirectories of root_dir,
+    Create __init__.py files in all subdirectories of root_dir,
     excluding specified directories.
 
     Args:
@@ -38,9 +38,6 @@ def create_init_files(root_dir, exclude_dirs=None):
             print(f"Already exists: {init_file}")
 
 def parse_args():
-    """
-    Parse command-line arguments.
-    """
     parser = argparse.ArgumentParser(description='Create __init__.py files in subdirectories.')
     parser.add_argument('root_dir', help='Root directory to start from')
     parser.add_argument('--exclude', nargs='*', default=["__pycache__"],

@@ -1,6 +1,6 @@
-# Project Name
+# Create init file
 
-A brief description of your project.
+Project made to create __init__.py files in subdirectories to make them a package
 
 ---
 
