@@ -2,7 +2,7 @@ import os
 import pytest
 import tempfile
 
-from scr.create_init_file.script import create_init_files
+from src.create_init_file.script import create_init_files
 
 
 @pytest.fixture
@@ -71,7 +71,7 @@ def test_create_init_files_permission_error(monkeypatch, temp_dir_structure):
 def test_main_with_args(monkeypatch, temp_dir_structure):
     """Test the command-line argument parsing."""
     import argparse
-    from scr.create_init_file.script import main
+    from src.create_init_file.script import main
 
     # Mock argparse
     def mock_parse_args(self):
