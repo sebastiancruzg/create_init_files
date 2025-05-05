@@ -16,6 +16,7 @@ A brief description of your project.
 Run the script with the following command:
 
 ```bash
+git clone https://sebastiancruz10@bitbucket.org/ttndevel/create_init_files.git
 python -m run <target_directory> [--exclude <dir1> <dir2> ...]
 ```
 
@@ -32,8 +33,6 @@ To run:
 cd create_init_file
 python -m run ../ttn-medical-core --exclude templates
 ```
-
-
 
 ---
 
